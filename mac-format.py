@@ -29,7 +29,7 @@ for n in range(1,4):
     b = b + 4
     mac_cisco.append(hextet)
 
-print ('.'.join(mac_cisco))
+print (('.'.join(mac_cisco)).lower())
 
 if '-u' in sys.argv:
     print (('.'.join(mac_cisco)).upper())
@@ -43,7 +43,7 @@ for n in range(1,7):
     b = b + 2
     mac_colon_2.append(hextet)
 
-print (':'.join(mac_colon_2))
+print ((':'.join(mac_colon_2)).lower())
 
 if '-u' in sys.argv:
     print ((':'.join(mac_colon_2)).upper())
@@ -57,7 +57,7 @@ for n in range(1,7):
     b = b + 2
     mac_hyphen_2.append(hextet)
 
-print ('-'.join(mac_hyphen_2))
+print (('-'.join(mac_hyphen_2)).lower())
 
 if '-u' in sys.argv:
     print (('-'.join(mac_hyphen_2)).upper())
