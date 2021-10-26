@@ -61,3 +61,17 @@ print (('-'.join(mac_hyphen_2)).lower())
 
 if '-u' in sys.argv:
     print (('-'.join(mac_hyphen_2)).upper())
+
+mac_hyphen_6 = []
+a = 0
+b = 6
+for n in range(1,3):
+    hextet = (mac_string[a:b])
+    a = a + 6
+    b = b + 6
+    mac_hyphen_6.append(hextet)
+
+print (('-'.join(mac_hyphen_6)).lower())
+
+if '-u' in sys.argv:
+    print (('-'.join(mac_hyphen_6)).upper())
